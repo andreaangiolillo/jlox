@@ -1,0 +1,5 @@
+# Java language version for compilation
+build --java_language_version=25
+
+# Java runtime used to execute binaries and tests
+build --java_runtime_version=remotejdk_25

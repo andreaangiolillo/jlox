@@ -14,7 +14,7 @@ The project uses **Bazel** as its build system.
 
 ### Prerequisites
 
-- Java JDK
+- Java JDK 25
 - Bazel (or Bazelisk)
 
 ### Build
