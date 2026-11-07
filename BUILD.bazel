@@ -1,0 +1,15 @@
+load("@rules_java//java:defs.bzl", "java_binary")
+
+package(default_visibility = ["//visibility:public"])
+
+java_binary(
+    name = "jlox",
+    srcs = glob(["com/andreaangiolillo/jlox/src/lox/*.java"]),
+    main_class = "com/andreaangiolillo/jlox/src/lox.Lox"
+)
+
+java_binary(
+    name = "tools",
+    srcs = glob(["com/andreaangiolillo/jlox/src/tools/*.java"]),
+    main_class = "com/andreaangiolillo/jlox/src/tools.GenerateAst"
+)
